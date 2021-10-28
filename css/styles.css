@@ -1,0 +1,101 @@
+header {
+  background-color: rgba(48,44,44,100);
+}
+
+nav {
+  background-color: rgb(48,44,44);
+}
+
+nav li {
+  letter-spacing: 0.01em;
+}
+
+button {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
+@media screen and (max-width: 405px) {
+  nav .brand-logo {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  nav .brand-logo {
+    font-size: 1.5rem;
+  }
+}
+
+nav i {
+  height: 45px;
+}
+
+/* Main styles */
+
+.section {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .parallax-container {
+    height: 25vh;
+  }
+
+  .section {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+}
+
+.row .col {
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .my-callig-column {
+    margin-bottom: 3vh;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 992px),
+  (min-width: 1110px) {
+  .tabs .tab a {
+    font-size: 20px;
+  }
+}
+
+.margin-topless {
+  margin-top: 0;
+}
+
+.margin-bottomless {
+  margin-bottom: 0;
+}
+
+.material-tooltip {
+  background-color: transparent;
+}
+
+.margin-right-for-icon {
+  margin-right: 7px;
+}
+
+.input-field .prefix {
+  color: #9e9e9e;
+}
+
+[type="checkbox"] + span:not(.lever):before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+  border: 2px solid #9e9e9e;
+}
+
+.required-field:after {
+  content: "*";
+  font-size: 12px;
+  vertical-align: top;
+  color: #ee6e73;
+}
+
+
