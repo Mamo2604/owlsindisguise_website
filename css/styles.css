@@ -1,9 +1,13 @@
 header {
-  background-color: rgba(48,44,44,100);
+    background: url("../images/logo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 nav {
-  background-color: rgb(48,44,44);
+  background-color: rgba(0,0,0,0.1);
 }
 
 nav li {
