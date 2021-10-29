@@ -1,18 +1,15 @@
-header {
+body {
     background-color: rgba(40,40,40,255);
     background-size: cover;
-    min-height: 100vh;
 }
 
+/*======== SET NAVIGATION BAR STYLE ========*/
 nav {
   background-color: rgba(45,45,45,0.1); /*Sets top bar color*/
 }
-
 .main-logo {
   text-align:center;
 }
-
-
 .brand-logo {
     
     font-family: Oswald;
@@ -20,11 +17,43 @@ nav {
 .brand-logo span {
   color: aqua;
 }
-
 nav li {
   letter-spacing: 0.05em; /*Sets letter spacing*/
   font-family: Oswald;
 }
+/*=========================================*/
+
+/* ========= SET ANIMATED BACKGROUND =========*/
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, black 50%, rgba(17,17,1,255) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+/*=========================================*/
 
 /*@media gets viewport screen and make changes if value is under specified size*/
 @media screen and (max-width: 405px) {
@@ -32,63 +61,52 @@ nav li {
     font-size: 1.5rem;
   }
 }
-
 @media screen and (max-width: 330px) {
   nav .brand-logo {
     font-size: 1.2rem;
   }
 }
+/*media in it*/
 
+/*======== SET TYPEWRITER BAR STYLE ========*/
 /* GLOBAL STYLES */
-h1 {
-  background: transparent;
-  text-align: center;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
+.typewriter {
+  background:transparent;
+  display: inline-flex;
+  justify-content: center;
+  text-shadow: 5px 5px 5px black;
 }
-
-@media screen and (max-width: 405px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-}
-
-/* TYPEWRITER EFFECT TO REDO */
-
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
   font-family: Oswald;
+  font-size: 64px; /*Sets Font initial size*/
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid aqua; /* The typwriter cursor */
-  white-space: pre; /* Keeps the content on a single line */
+  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 1.5s steps(29, end),
-    blink-caret 1.0s step-end infinite;
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+  font-size: 4.5vw;/* Sets Font by viewport size*/
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
+/*width to set by .container width. sets animation maximum width distance*/
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: aqua }
 }
+/*=========================================*/
 
-/* TYPEWRITER EFFECT TO REDO */
-
-/* Main styles */
+@keyframes {
+  if blink-caret
+}
 
 .section {
   padding-top: 5vw;
